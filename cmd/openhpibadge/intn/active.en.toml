@@ -1,0 +1,31 @@
+[countdown]
+one = "{{if .Ended}}ended {{.EndDate}}{{else if .Running}}running for {{.DaysRunning}} day{{else}}starts in {{.DaysLeft}} day{{end}}"
+other = "{{if .Ended}}ended {{.EndDate}}{{else if .Running}}running for {{.DaysRunning}} days{{else}}starts in {{.DaysLeft}} days{{end}}"
+
+[duration]
+one = "{{.Weeks}} week"
+other = "{{.Weeks}} weeks"
+
+[end-date]
+one = "{{if .Ended}}ended{{else}}ends{{end}} {{.Date}}"
+other = "{{if .Ended}}ended{{else}}ends{{end}} {{.Date}}"
+
+[enrolled]
+one = "{{.Count}} enrolled"
+other = "{{.Count}} enrolled"
+
+[language]
+one = "language"
+other = "language"
+
+[start-date]
+one = "{{if .Ended}}started{{else}}starts{{end}} {{.Date}}"
+other = "{{if .Ended}}started{{else}}starts{{end}} {{.Date}}"
+
+[status]
+one = "{{if .Ended}}ended{{else if .Running}}running{{else}}coming up{{end}}"
+other = "{{if .Ended}}ended{{else if .Running}}running{{else}}coming up{{end}}"
+
+[title]
+one = "course"
+other = "course"

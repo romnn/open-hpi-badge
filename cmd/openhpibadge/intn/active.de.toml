@@ -1,0 +1,39 @@
+[countdown]
+hash = "sha1-ba7590c8f4b1dd39eeea8e3615240d95c3ba38cd"
+one = "{{if .Ended}}endete am {{.EndDate}}{{else if .Running}}läuft seit {{.DaysRunning}} Tag{{else}}startet in {{.DaysLeft}} Tag{{end}}"
+other = "{{if .Ended}}endete am {{.EndDate}}{{else if .Running}}läuft seit {{.DaysRunning}} Tagen{{else}}startet in {{.DaysLeft}} Tagen{{end}}"
+
+[duration]
+hash = "sha1-3ebf315fd2f4b501fadfc8cb958e8f5a2520c7a3"
+one = "{{.Weeks}} Wochen"
+other = "{{.Weeks}} Wochen"
+
+[end-date]
+hash = "sha1-2d3c8f674389b8be583bc8ceca7150877b78f398"
+one = "{{if .Ended}}endete{{else}}endet{{end}} am {{.Date}}"
+other = "{{if .Ended}}endete{{else}}endet{{end}} am {{.Date}}"
+
+[enrolled]
+hash = "sha1-88c87da4014d36c0653e6126430b47255136a6f7"
+one = "{{.Count}} eingeschrieben"
+other = "{{.Count}} eingeschrieben"
+
+[language]
+hash = "sha1-e11523c5ff23fc1600aca2d8ee5adb542c5ce4b3"
+one = "Sprache"
+other = "Sprache"
+
+[start-date]
+hash = "sha1-af366df91e2781d8346901827ec00315bf1c0de8"
+one = "{{if .Ended}}startete{{else}}startet{{end}} am {{.Date}}"
+other = "{{if .Ended}}startete{{else}}startet{{end}} am {{.Date}}"
+
+[status]
+hash = "sha1-1a5796beabf9ef328f02cf1660aee2e3793ee911"
+one = "{{if .Ended}}abgeschlossen{{else if .Running}}aktiv{{else}}bald verfügbar{{end}}"
+other = "{{if .Ended}}abgeschlossen{{else if .Running}}aktiv{{else}}bald verfügbar{{end}}"
+
+[title]
+hash = "sha1-4809561b34384fc017da4d2efc93d79ca3d90e22"
+one = "Kurs"
+other = "Kurs"
