@@ -1,9 +1,9 @@
 ## open-hpi-badge
 
-[![Build Status](https://travis-ci.com/romnnn/openhpibadge.svg?branch=master)](https://travis-ci.com/romnnn/openhpibadge)
-[![GitHub](https://img.shields.io/github/license/romnnn/openhpibadge)](https://github.com/romnnn/openhpibadge)
-[![GoDoc](https://godoc.org/github.com/romnnn/openhpibadge?status.svg)](https://godoc.org/github.com/romnnn/openhpibadge) [![Docker Pulls](https://img.shields.io/docker/pulls/romnn/openhpibadge)](https://hub.docker.com/r/romnn/openhpibadge) [![Test Coverage](https://codecov.io/gh/romnnn/openhpibadge/branch/master/graph/badge.svg)](https://codecov.io/gh/romnnn/openhpibadge)
-[![Release](https://img.shields.io/github/release/romnnn/openhpibadge)](https://github.com/romnnn/openhpibadge/releases/latest)
+[![Build Status](https://travis-ci.com/romnnn/open-hpi-badge.svg?branch=master)](https://travis-ci.com/romnnn/open-hpi-badge)
+[![GitHub](https://img.shields.io/github/license/romnnn/open-hpi-badge)](https://github.com/romnnn/open-hpi-badge)
+[![GoDoc](https://godoc.org/github.com/romnnn/open-hpi-badge?status.svg)](https://godoc.org/github.com/romnnn/open-hpi-badge) [![Docker Pulls](https://img.shields.io/docker/pulls/romnn/open-hpi-badge)](https://hub.docker.com/r/romnn/open-hpi-badge) [![Test Coverage](https://codecov.io/gh/romnnn/open-hpi-badge/branch/master/graph/badge.svg)](https://codecov.io/gh/romnnn/open-hpi-badge)
+[![Release](https://img.shields.io/github/release/romnnn/open-hpi-badge)](https://github.com/romnnn/open-hpi-badge/releases/latest)
 
 Tiny go server that serves a custom api endpoint for [shields.io](https://img.shields.io) to embed openHPI related badges on the web.
 
@@ -11,7 +11,7 @@ Tiny go server that serves a custom api endpoint for [shields.io](https://img.sh
 go get github.com/romnnn/openhpibadge/cmd/openhpibadge
 ```
 
-You can also download pre built binaries from the [releases page](https://github.com/romnnn/openhpibadge/releases), or use the `docker` image:
+You can also download pre built binaries from the [releases page](https://github.com/romnnn/open-hpi-badge/releases), or use the `docker` image:
 
 ```bash
 docker pull romnn/openhpibadge
