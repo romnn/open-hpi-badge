@@ -13,6 +13,9 @@ import (
 	"golang.org/x/text/language"
 )
 
+// Version is incremented using bump2version
+const Version = "0.0.1"
+
 type openHPIColor string
 
 const (
