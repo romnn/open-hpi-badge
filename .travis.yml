@@ -7,7 +7,7 @@ go:
 os:
 - linux
 - osx
-env: MOD=github.com/romnnn/openhpibadge/cmd/openhpibadge BINARY=openhpibadge
+env: MOD=github.com/romnnn/open-hpi-badge/cmd/openhpibadge BINARY=openhpibadge
 jobs:
   allow_failures:
   - go: tip
@@ -27,7 +27,7 @@ jobs:
       file: build/*
       skip_cleanup: true
       on:
-        repo: romnnn/openhpibadge
+        repo: romnnn/open-hpi-badge
         tags: true
 install: true
 notifications:
