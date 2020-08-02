@@ -6,12 +6,12 @@ import (
 
 // MOOC ...
 type MOOC struct {
-	URL string
-	Title string
+	URL          string
+	Title        string
 	Participants Participants
-	Language string
-	Start time.Time
-	End time.Time
+	Language     string
+	Start        time.Time
+	End          time.Time
 }
 
 // Participants ...

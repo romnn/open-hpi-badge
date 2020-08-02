@@ -1,15 +1,16 @@
 package openhpibadge
 
 import (
-	"strings"
-	"time"
+	"errors"
 	"fmt"
 	"net/url"
-	"strconv"
-	"errors"
 	"regexp"
-	"github.com/gocolly/colly/v2"
+	"strconv"
+	"strings"
+	"time"
+
 	"github.com/araddon/dateparse"
+	"github.com/gocolly/colly/v2"
 )
 
 func hasClasses(have []string, want []string) bool {
@@ -81,7 +82,7 @@ func ScrapeMOOCByURL(URL string) (*MOOC, error) {
 
 	c.Limit(&colly.LimitRule{
 		DomainGlob:  "open.hpi.de/*",
-		Delay: 1 * time.Second,
+		Delay:       1 * time.Second,
 		RandomDelay: 1 * time.Second,
 	})
 
@@ -91,7 +92,6 @@ func ScrapeMOOCByURL(URL string) (*MOOC, error) {
 		scrapeStatusCode = r.StatusCode
 	})
 
-	
 	c.OnHTML("div#schema-course-title", func(e *colly.HTMLElement) {
 		mooc.Title = e.Text
 	})
@@ -149,7 +149,7 @@ func ScrapeMOOCByURL(URL string) (*MOOC, error) {
 			if start, end, err := parseDateRange(strings.Split(e.ChildText("span:nth-child(2)"), "-")); err == nil {
 				mooc.Start = start
 				mooc.End = end
-			}	
+			}
 		}
 	})
 

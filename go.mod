@@ -1,4 +1,4 @@
-module github.com/romnnn/openhpibadge
+module github.com/romnnn/open-hpi-badge
 
 go 1.14
 

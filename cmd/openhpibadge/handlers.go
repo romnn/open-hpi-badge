@@ -8,11 +8,11 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/nicksnyder/go-i18n/v2/i18n"
-	"github.com/romnnn/openhpibadge"
+	openhpibadge "github.com/romnnn/open-hpi-badge"
 )
 
-func courseEnrolledHandler(bundle *i18n.Bundle) func (c *gin.Context) {
-	return func (c *gin.Context) {
+func courseEnrolledHandler(bundle *i18n.Bundle) func(c *gin.Context) {
+	return func(c *gin.Context) {
 		_, loc, course := parseLanguageAndCourseParameters(bundle, c)
 		mooc, err := openhpibadge.ScrapeMOOCByName(course)
 		if err != nil {
@@ -52,8 +52,8 @@ func courseEnrolledHandler(bundle *i18n.Bundle) func (c *gin.Context) {
 	}
 }
 
-func courseEndDateHandler(bundle *i18n.Bundle) func (c *gin.Context) {
-	return func (c *gin.Context) {
+func courseEndDateHandler(bundle *i18n.Bundle) func(c *gin.Context) {
+	return func(c *gin.Context) {
 		lang, loc, course := parseLanguageAndCourseParameters(bundle, c)
 		mooc, err := openhpibadge.ScrapeMOOCByName(course)
 		if err != nil {
@@ -86,8 +86,8 @@ func courseEndDateHandler(bundle *i18n.Bundle) func (c *gin.Context) {
 	}
 }
 
-func courseStartDateHandler(bundle *i18n.Bundle) func (c *gin.Context) {
-	return func (c *gin.Context) {
+func courseStartDateHandler(bundle *i18n.Bundle) func(c *gin.Context) {
+	return func(c *gin.Context) {
 		lang, loc, course := parseLanguageAndCourseParameters(bundle, c)
 		mooc, err := openhpibadge.ScrapeMOOCByName(course)
 		if err != nil {
@@ -120,8 +120,8 @@ func courseStartDateHandler(bundle *i18n.Bundle) func (c *gin.Context) {
 	}
 }
 
-func courseCountdownHandler(bundle *i18n.Bundle) func (c *gin.Context) {
-	return func (c *gin.Context) {
+func courseCountdownHandler(bundle *i18n.Bundle) func(c *gin.Context) {
+	return func(c *gin.Context) {
 		lang, loc, course := parseLanguageAndCourseParameters(bundle, c)
 		mooc, err := openhpibadge.ScrapeMOOCByName(course)
 		if err != nil {
@@ -168,8 +168,8 @@ func courseCountdownHandler(bundle *i18n.Bundle) func (c *gin.Context) {
 	}
 }
 
-func courseStatusHandler(bundle *i18n.Bundle) func (c *gin.Context) {
-	return func (c *gin.Context) {
+func courseStatusHandler(bundle *i18n.Bundle) func(c *gin.Context) {
+	return func(c *gin.Context) {
 		_, loc, course := parseLanguageAndCourseParameters(bundle, c)
 		mooc, err := openhpibadge.ScrapeMOOCByName(course)
 		if err != nil {
@@ -203,8 +203,8 @@ func courseStatusHandler(bundle *i18n.Bundle) func (c *gin.Context) {
 	}
 }
 
-func courseDurationHandler(bundle *i18n.Bundle) func (c *gin.Context) {
-	return func (c *gin.Context) {
+func courseDurationHandler(bundle *i18n.Bundle) func(c *gin.Context) {
+	return func(c *gin.Context) {
 		_, loc, course := parseLanguageAndCourseParameters(bundle, c)
 		mooc, err := openhpibadge.ScrapeMOOCByName(course)
 		if err != nil {
@@ -236,8 +236,8 @@ func courseDurationHandler(bundle *i18n.Bundle) func (c *gin.Context) {
 	}
 }
 
-func courseTitleHandler(bundle *i18n.Bundle) func (c *gin.Context) {
-	return func (c *gin.Context) {
+func courseTitleHandler(bundle *i18n.Bundle) func(c *gin.Context) {
+	return func(c *gin.Context) {
 		_, loc, course := parseLanguageAndCourseParameters(bundle, c)
 		mooc, err := openhpibadge.ScrapeMOOCByName(course)
 		if err != nil {
@@ -263,8 +263,8 @@ func courseTitleHandler(bundle *i18n.Bundle) func (c *gin.Context) {
 	}
 }
 
-func courseLanguageHandler(bundle *i18n.Bundle) func (c *gin.Context) {
-	return func (c *gin.Context) {
+func courseLanguageHandler(bundle *i18n.Bundle) func(c *gin.Context) {
+	return func(c *gin.Context) {
 		_, loc, course := parseLanguageAndCourseParameters(bundle, c)
 		mooc, err := openhpibadge.ScrapeMOOCByName(course)
 		if err != nil {

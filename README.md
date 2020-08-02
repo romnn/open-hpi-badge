@@ -8,7 +8,7 @@
 Tiny go server that serves a custom api endpoint for [shields.io](https://img.shields.io) to embed openHPI related badges on the web.
 
 ```bash
-go get github.com/romnnn/openhpibadge/cmd/openhpibadge
+go get github.com/romnnn/open-hpi-badge/cmd/openhpibadge
 ```
 
 You can also download pre built binaries from the [releases page](https://github.com/romnnn/open-hpi-badge/releases), or use the `docker` image:
@@ -24,15 +24,15 @@ There are a few options for deploying your endpoint:
 
 1. Running the binary 
     ```bash
-    go build github.com/romnnn/openhpibadge/cmd/openhpibadge
+    go build github.com/romnnn/open-hpi-badge/cmd/openhpibadge
     ./openhpibadge --port 8080 --prod
     ```
 
-    You can also download pre built binaries from the [releases page](https://github.com/romnnn/openhpibadge/releases)
+    You can also download pre built binaries from the [releases page](https://github.com/romnnn/open-hpi-badge/releases)
 
 2. Using `docker`
     ```bash
-    docker run -p 8080:8080 romnn/openhpibadge --port 8080 --prod
+    docker run -p 8080:8080 romnn/open-hpi-badge --port 8080 --prod
     ```
 
 #### Using the badges
@@ -43,7 +43,7 @@ https://img.shields.io/endpoint?url=...&style=...
 The package can also be imported as a library that exports the core functionality to build your more custom endpoint or service.
 
 ```golang
-import github.com/romnnn/openhpibadge
+import github.com/romnnn/open-hpi-badge
 ```
 
 For example, you can scrape an openHPI mooc by URL:
