@@ -85,8 +85,8 @@ github.com/nicksnyder/go-i18n/v2 v2.0.3/go.mod h1:oDab7q8XCYMRlcrBnaY/7B1eOectbv
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/prometheus/client_model v0.0.0-20190812154241-14fe0d1b01d4/go.mod h1:xMI15A0UPsDsEKsMN9yxemIoYk6Tm2C1GtYGdfGttqA=
-github.com/romnnn/flags4urfavecli v0.1.2 h1:L7tJbR0E6zZAy+6x/PJTwJtDhkQ/338oi/E8q3Q/CE0=
-github.com/romnnn/flags4urfavecli v0.1.2/go.mod h1:h90ruRpoaRfrPRB1ZDjHPW7vBZPKVyLjMAbUw7oXFG8=
+github.com/romnn/flags4urfavecli v0.1.2 h1:L7tJbR0E6zZAy+6x/PJTwJtDhkQ/338oi/E8q3Q/CE0=
+github.com/romnn/flags4urfavecli v0.1.2/go.mod h1:h90ruRpoaRfrPRB1ZDjHPW7vBZPKVyLjMAbUw7oXFG8=
 github.com/russross/blackfriday/v2 v2.0.1 h1:lPqVAte+HuHNfhJ/0LC98ESWRz8afy9tM/0RK8m9o+Q=
 github.com/russross/blackfriday/v2 v2.0.1/go.mod h1:+Rmxgy9KzJVeS9/2gXHxylqXiyQDYRxCVz55jmeOWTM=
 github.com/saintfish/chardet v0.0.0-20120816061221-3af4cd4741ca h1:NugYot0LIVPxTvN8n+Kvkn6TrbMyxQiuvKdEwFdR9vI=

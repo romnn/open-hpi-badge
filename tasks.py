@@ -10,10 +10,10 @@ import os
 from invoke import task
 import webbrowser
 
-PKG = "github.com/romnnn/open-hpi-badge"
+PKG = "github.com/romnn/open-hpi-badge"
 CMD_PKG = PKG
 
-CMD_PKG = "github.com/romnnn/open-hpi-badge/cmd/openhpibadge"
+CMD_PKG = "github.com/romnn/open-hpi-badge/cmd/openhpibadge"
 
 
 ROOT_DIR = os.path.dirname(os.path.realpath(__file__))

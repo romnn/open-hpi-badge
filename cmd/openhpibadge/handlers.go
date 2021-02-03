@@ -8,7 +8,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/nicksnyder/go-i18n/v2/i18n"
-	openhpibadge "github.com/romnnn/open-hpi-badge"
+	openhpibadge "github.com/romnn/open-hpi-badge"
 )
 
 func courseEnrolledHandler(bundle *i18n.Bundle) func(c *gin.Context) {

@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	openhpibadge "github.com/romnnn/open-hpi-badge"
+	openhpibadge "github.com/romnn/open-hpi-badge"
 )
 
 func run() int {

@@ -1,17 +1,17 @@
 ## open-hpi-badge
 
-[![Build Status](https://travis-ci.com/romnnn/open-hpi-badge.svg?branch=master)](https://travis-ci.com/romnnn/open-hpi-badge)
-[![GitHub](https://img.shields.io/github/license/romnnn/open-hpi-badge)](https://github.com/romnnn/open-hpi-badge)
-[![GoDoc](https://godoc.org/github.com/romnnn/open-hpi-badge?status.svg)](https://godoc.org/github.com/romnnn/open-hpi-badge) [![Docker Pulls](https://img.shields.io/docker/pulls/romnn/open-hpi-badge)](https://hub.docker.com/r/romnn/open-hpi-badge) [![Test Coverage](https://codecov.io/gh/romnnn/open-hpi-badge/branch/master/graph/badge.svg)](https://codecov.io/gh/romnnn/open-hpi-badge)
-[![Release](https://img.shields.io/github/release/romnnn/open-hpi-badge)](https://github.com/romnnn/open-hpi-badge/releases/latest)
+[![Build Status](https://travis-ci.com/romnn/open-hpi-badge.svg?branch=master)](https://travis-ci.com/romnn/open-hpi-badge)
+[![GitHub](https://img.shields.io/github/license/romnn/open-hpi-badge)](https://github.com/romnn/open-hpi-badge)
+[![GoDoc](https://godoc.org/github.com/romnn/open-hpi-badge?status.svg)](https://godoc.org/github.com/romnn/open-hpi-badge) [![Docker Pulls](https://img.shields.io/docker/pulls/romnn/open-hpi-badge)](https://hub.docker.com/r/romnn/open-hpi-badge) [![Test Coverage](https://codecov.io/gh/romnn/open-hpi-badge/branch/master/graph/badge.svg)](https://codecov.io/gh/romnn/open-hpi-badge)
+[![Release](https://img.shields.io/github/release/romnn/open-hpi-badge)](https://github.com/romnn/open-hpi-badge/releases/latest)
 
 Tiny go server that serves a custom api endpoint for [shields.io](https://img.shields.io) to embed openHPI related badges on the web.
 
 ```bash
-go get github.com/romnnn/open-hpi-badge/cmd/openhpibadge
+go get github.com/romnn/open-hpi-badge/cmd/openhpibadge
 ```
 
-You can also download pre built binaries from the [releases page](https://github.com/romnnn/open-hpi-badge/releases), or use the `docker` image:
+You can also download pre built binaries from the [releases page](https://github.com/romnn/open-hpi-badge/releases), or use the `docker` image:
 
 ```bash
 docker pull romnn/openhpibadge
@@ -24,11 +24,11 @@ There are a few options for deploying your endpoint:
 
 1. Running the binary 
     ```bash
-    go build github.com/romnnn/open-hpi-badge/cmd/openhpibadge
+    go build github.com/romnn/open-hpi-badge/cmd/openhpibadge
     ./openhpibadge --port 8080 --prod
     ```
 
-    You can also download pre built binaries from the [releases page](https://github.com/romnnn/open-hpi-badge/releases)
+    You can also download pre built binaries from the [releases page](https://github.com/romnn/open-hpi-badge/releases)
 
 2. Using `docker`
     ```bash
@@ -43,7 +43,7 @@ https://img.shields.io/endpoint?url=...&style=...
 The package can also be imported as a library that exports the core functionality to build your more custom endpoint or service.
 
 ```golang
-import github.com/romnnn/open-hpi-badge
+import github.com/romnn/open-hpi-badge
 ```
 
 For example, you can scrape an openHPI mooc by URL:

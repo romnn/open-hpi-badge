@@ -1,4 +1,4 @@
-module github.com/romnnn/open-hpi-badge
+module github.com/romnn/open-hpi-badge
 
 go 1.14
 
@@ -8,7 +8,7 @@ require (
 	github.com/gin-gonic/gin v1.6.3
 	github.com/gocolly/colly/v2 v2.1.0
 	github.com/nicksnyder/go-i18n/v2 v2.0.3
-	github.com/romnnn/flags4urfavecli v0.1.2
+	github.com/romnn/flags4urfavecli v0.1.2
 	github.com/sirupsen/logrus v1.6.0
 	github.com/stretchr/testify v1.4.0
 	github.com/urfave/cli/v2 v2.2.0
