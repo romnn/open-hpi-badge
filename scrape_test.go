@@ -107,14 +107,14 @@ func TestScrapePythonjunior2020(t *testing.T) {
 	if course.End != end {
 		t.Errorf("Expected end date %v for pythonjunior2020 but got %v", end, course.End)
 	}
-	partsStart := 0
-	partsEnd := 0
+	partsStart := 4200
+	partsEnd := 9500
 	minPartsCurrent := 500
-	if course.Participants.Start != partsStart {
-		t.Errorf("Expected %d participants at the start for pythonjunior2020 but got %d", partsStart, course.Participants.Start)
+	if course.Participants.Start < partsStart {
+		t.Errorf("Expected at least %d participants at the start for pythonjunior2020 but got %d", partsStart, course.Participants.Start)
 	}
-	if course.Participants.End != partsEnd {
-		t.Errorf("Expected %d participants at the start for pythonjunior2020 but got %d", partsEnd, course.Participants.End)
+	if course.Participants.End < partsEnd {
+		t.Errorf("Expected at least %d participants at the end for pythonjunior2020 but got %d", partsEnd, course.Participants.End)
 	}
 	if course.Participants.Current < minPartsCurrent {
 		t.Errorf("Expected at least %d participants at the start for pythonjunior2020 but got %d", minPartsCurrent, course.Participants.Current)

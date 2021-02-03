@@ -8,6 +8,7 @@ import (
 	"time"
 
 	"github.com/BurntSushi/toml"
+	"github.com/gin-gonic/gin"
 	"github.com/nicksnyder/go-i18n/v2/i18n"
 	"github.com/stretchr/testify/assert"
 	"golang.org/x/text/language"
@@ -49,6 +50,7 @@ func TestRoutes(t *testing.T) {
 		t.Fatal(err)
 	}
 	bundle.ParseMessageFileBytes(data, "active.de.toml")
+	gin.SetMode(gin.ReleaseMode)
 	router := setupRouter(bundle)
 
 	type result struct {
