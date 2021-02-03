@@ -1,8 +1,10 @@
 ## open-hpi-badge
 
-[![Build Status](https://travis-ci.com/romnn/open-hpi-badge.svg?branch=master)](https://travis-ci.com/romnn/open-hpi-badge)
+[![Build Status](https://github.com/romnn/open-hpi-badge/workflows/test/badge.svg)](https://github.com/romnn/open-hpi-badge/actions)
 [![GitHub](https://img.shields.io/github/license/romnn/open-hpi-badge)](https://github.com/romnn/open-hpi-badge)
-[![GoDoc](https://godoc.org/github.com/romnn/open-hpi-badge?status.svg)](https://godoc.org/github.com/romnn/open-hpi-badge) [![Docker Pulls](https://img.shields.io/docker/pulls/romnn/open-hpi-badge)](https://hub.docker.com/r/romnn/open-hpi-badge) [![Test Coverage](https://codecov.io/gh/romnn/open-hpi-badge/branch/master/graph/badge.svg)](https://codecov.io/gh/romnn/open-hpi-badge)
+[![GoDoc](https://godoc.org/github.com/romnn/open-hpi-badge?status.svg)](https://godoc.org/github.com/romnn/open-hpi-badge)
+[![Docker Pulls](https://img.shields.io/docker/pulls/romnn/open-hpi-badge)](https://hub.docker.com/r/romnn/open-hpi-badge)
+[![Test Coverage](https://codecov.io/gh/romnn/open-hpi-badge/branch/master/graph/badge.svg)](https://codecov.io/gh/romnn/open-hpi-badge)
 [![Release](https://img.shields.io/github/release/romnn/open-hpi-badge)](https://github.com/romnn/open-hpi-badge/releases/latest)
 
 Tiny go server that serves a custom api endpoint for [shields.io](https://img.shields.io) to embed openHPI related badges on the web.
