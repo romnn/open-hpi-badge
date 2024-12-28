@@ -1,0 +1,14 @@
+[tool.bumpversion]
+current_version = 0.1.1
+commit = True
+tag = True
+
+[[tool.bumpversion.files]]
+filename = "cmd/openhpibadge/openhpibadge.go"
+search = "const Version = \"{current_version}\""
+replace = "const Version = \"{new_version}\""
+
+[[tool.bumpversion.files]]
+filename = "openhpibadge.go"
+search = "const Version = \"{current_version}\""
+replace = "const Version = \"{new_version}\""
